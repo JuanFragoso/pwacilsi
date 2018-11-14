@@ -1,0 +1,260 @@
+/* reset de margenes */
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: 'Open Sans', Verdana;
+}
+
+html, body{
+  overflow-x: hidden;
+}
+
+body{
+  background: white;
+}
+
+/* arreglar floats */
+.clearfix{
+  clear: both;
+  float: none;
+}
+
+.container{
+  width: 85%;
+  margin: 0px auto; /* centrar bloque */
+}
+
+/* header */
+#main-header{
+  background: white;
+  height: 100px;
+  line-height: 85px;
+}
+
+#logo{
+  width: 48%; /* 63% */
+  float: left;
+}
+
+#logo h1{
+  font-weight: bold;
+  font-size: 25px;
+  color: #28255A;
+}
+
+#menu{
+  width: 415px;
+  float: left;
+}
+
+#menu ul li{
+  list-style: none;
+  float: left;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+#menu ul li a{
+  color: black;
+}
+
+#menu ul li a:hover{
+  color: #1B6EAE;
+}
+
+/* slider */
+#slider{
+  height: 260px;
+  background: #28255A;
+}
+
+#slider h2{
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  line-height: 60px;
+  text-shadow: 0px 0px 6px gray;
+  padding-top: 80px;
+}
+
+/* Servicios */
+.subheader{
+  font-size: 34px;
+  color: #333;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(40, 37, 90, 0.5); /* #28255A */
+}
+
+.service, .video{
+  width: 32%;
+  text-align: center;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.service img{
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.service h3{
+  margin-bottom: 10px;
+}
+
+.service p, .video p{
+  color: #444;
+  text-align: center;
+  display: block;
+  width: 85%;
+  margin: 0px auto;
+}
+
+/* Videos */
+.video iframe{
+  width: 80%;
+  height: 170px;
+}
+
+/* Footer */
+#footer{
+  background: #333;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+#footer .subheader{
+  color: white;
+}
+
+#social{
+  display: block;
+  width: 220px;
+  margin: 0px auto;
+  list-style: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#social li{
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: all 300ms;
+}
+
+#social li:hover{
+  opacity: 0.8;
+  transform: scale(1.1, 1.1);
+}
+
+@media all and (max-width: 940px){
+
+  #main-header{
+    height: 70px
+    line-height: 65px;
+  }
+
+  #logo{
+    width: 38%;
+  }
+
+  .container{
+    width: 95%;
+  }
+}
+
+@media all and (max-width: 745px){
+  #slider{
+    overflow: hidden;
+    height: 210px;
+  }
+
+  #slider h2{
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 35px;
+  }
+
+  .service, .video{
+    width: 70%;
+    float: none;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .service img{
+    margin-bottom: 10px;
+  }
+
+  .service p, .video p{
+    margin-top: 10px;
+  }
+
+  .video iframe{
+    height: 230px;
+  }
+
+}
+
+@media all and (max-width: 681px){
+
+  #logo{
+    width: 170px;
+    float: none;
+    margin: 0px auto;
+  }
+
+  #menu{
+    float: none;
+    margin: 0px auto;
+  }
+}
+
+@media all and (max-width: 416px){
+  #menu{
+    width: 100%;
+    text-align: center;
+  }
+
+  #menu ul li{
+    margin-left: 2%;
+    margin-right: 2%;
+
+  }
+}
+
+@media all and (max-width: 390px){
+  #slider h2{
+    padding-top: 8px;
+  }
+
+  .service, .video{
+    width: 90%;
+  }
+
+  .video iframe{
+    width: 80%;
+    height: 140px;
+  }
+}
+
+
+@media all and (max-width: 361px){
+  #main-header{
+    height: auto;
+  }
+
+  #menu ul li{
+    float: none;
+
+  }
+}
